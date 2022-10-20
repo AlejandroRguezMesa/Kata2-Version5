@@ -14,10 +14,10 @@ public class Histograma<T> {
     }
 
     public Map<T, Integer> getHistogram() {
-        Map<T, Integer> histo = new HashMap<>();
+        Map<T, Integer> histogram = new HashMap<>();
         for(T i : data) {
-            histo.put(i, histo.containsKey(i) ? histo.get(i) + 1 : 1);
+            histogram.put(i, histogram.containsKey(i) ? histogram.get(i) + 1 : 1);
         }
-        return histo;
+        return histogram;
     }
 }
